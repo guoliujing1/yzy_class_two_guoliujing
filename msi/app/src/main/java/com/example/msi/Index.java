@@ -13,7 +13,6 @@ import android.widget.EditText;
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OptionalDataException;
 import java.io.OutputStreamWriter;
 public class Index extends AppCompatActivity implements View.OnClickListener {
     private EditText edit;
@@ -35,9 +34,8 @@ public class Index extends AppCompatActivity implements View.OnClickListener {
         //goto_login
         Button goto_login = (Button)findViewById(R.id.goto_login);
         goto_login.setOnClickListener(this);
-        //goto_database
-        Button goto_database =
-                (Button)findViewById(R.id.goto_database);
+        //
+        Button goto_database = (Button)findViewById(R.id.goto_database);
         goto_database.setOnClickListener(this);
     }
     /**
@@ -48,8 +46,9 @@ public class Index extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.goto_database:
-                Intent j = new Intent(Index.this, OptionalDataException.class);
+                Intent j = new Intent(Index.this,OptionsDatabase.class);
                 startActivity(j);
+                break;
             case R.id.goto_login:
                 //跳转到登录界面
                 Intent i = new Intent(Index.this,Login.class);

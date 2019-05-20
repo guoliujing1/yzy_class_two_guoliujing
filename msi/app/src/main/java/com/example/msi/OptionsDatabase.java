@@ -6,14 +6,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class OptionsDatabase extends AppCompatActivity {
-
     private MyDatabaseHelper dbHelper;
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.database_view);
         //创建数据库操作
-        dbHelper = new MyDatabaseHelper(this, "Bookstore.db", null,1);
+        dbHelper = new MyDatabaseHelper(this,
+                "BookStore.db",
+                null,
+                1);
         Button createDatabase = (Button)findViewById(R.id.create_database);
         createDatabase.setOnClickListener(new View.OnClickListener() {
             @Override
