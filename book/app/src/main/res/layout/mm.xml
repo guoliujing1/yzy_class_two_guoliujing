@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/t">
+
+    <TextView
+        android:id="@+id/we"
+        android:layout_width="352dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="welcome"
+        android:textSize="80dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="24dp"
+        android:hint="请输入账号"/>
+    <EditText
+        android:id="@+id/pass_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="24sp"
+        android:hint="请输入密码"/>
+    <EditText
+        android:id="@+id/pass_word2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="24sp"
+        android:hint="请确认密码"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/register"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:text="注册"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
